@@ -1,6 +1,6 @@
 # MockExamApp
 
-
+WebApp created with few people. Using Spring Boot and React.
 
 ## Getting started
 
