@@ -1,0 +1,19 @@
+services:
+ back-end:
+  build:
+   context: .
+   dockerfile: Dockerfile
+  ports:
+   - 8080:8080
+  volumes:
+    - "C:/Users/henke/Documents:/root/Documents"   
+ front-end:
+  build:
+   context: src/ui
+   dockerfile: Dockerfile
+  ports:
+   - 5173:5173
+  depends_on:
+   - back-end
+  
+   
